@@ -33,6 +33,30 @@ export const Aboutus = () => {
         }
       ]
 
+      const word3 = [
+        {
+          text: "Guiding",  
+        },
+        {
+          text: "Your,",
+        },
+        {
+          text: "Path",
+        },
+        {
+          text: "Our",
+        },
+      ]; 
+
+      const word4 = [
+        {
+          text: "Immigration",  
+        },
+        {
+          text: "Mission,",
+        },
+       
+      ];
 
     return <div className="flex justify-center pt-20" id="about">
         <div>
@@ -51,11 +75,43 @@ export const Aboutus = () => {
             </div>
 
             <div className="flex justify-between">
-                <div className="w-[300px] flex justify-center py-15 bg-[#FFFFFF]"> <HTMLContent/> </div>
-                <div className="w-[300px] flex justify-center py-15 bg-[#FFFFFF]"> <HTMLContent2/> </div>
-                <div className="w-[300px] flex justify-center py-15 bg-[#FFFFFF]"> <HTMLContent3/>  </div>
+            <div className="">
+                <div className="w-[300px] flex justify-center pt-15 bg-[#FFFFFF] items-center"> <HTMLContent/> <p className="text-7xl">%</p> </div>
+                <div className="flex justify-center text-2xl text-start px-auto font-semibold">
+                <div className="hover:underline decoration-[#0191FF]" ><p>Successful Visa</p>
+                <p>Process Rate</p></div>
+                </div>
+                </div> 
+                <div className="">
+                <div className="w-[300px] flex justify-center pt-15 bg-[#FFFFFF] items-center"> <HTMLContent2/><p className="text-7xl">K</p> </div>
+                <div className="flex justify-center text-2xl text-start px-auto font-semibold">
+                <div className="hover:underline decoration-[#0191FF]"><p>We Have Worked</p>
+                <p>With Clients</p></div>
+                </div>
+                </div> 
+                
+                <div className="">
+                <div className="w-[300px] flex justify-center pt-15 bg-[#FFFFFF] items-center"> <HTMLContent3/> <p className="text-7xl">DAY</p> </div>
+                <div className="flex justify-center text-2xl text-start px-auto font-semibold">
+                <div className="hover:underline decoration-[#0191FF]"><p>Application Approval</p>
+                <p>Processing Time</p></div>
+                </div>
+                </div>
+                
             </div>
-             <div className="py-200"></div>
+
+            <div className="flex justify-between pt-30">
+              <img src="/mission.jpg" width={500} height={200} alt="" />
+              <div className="flex justify-center my-auto">
+                <div className="max-w-2xl">
+                  <TypewriterEffectSmooth words={word3} />
+                  <TypewriterEffectSmooth2 words={word4} />
+                  <p className="text-xl pt-7">With years of experience in sponsoring and managing visas, we’ve perfected our processes to deliver exceptional results. Our deep understanding of work visas and our commitment to client satisfaction make us your ideal partner. Whether you’re looking to immigrate to the United States or another country, we’re here to guide you every step of the way.</p>
+                  <div className="pt-5"><a href="" className="flex justify-center text-white hover:bg-[#00CC99] transition duration-300 text-base font-medium w-[400px] py-5 rounded-lg bg-[#0191FF]">Apply Know</a></div>
+                </div>
+              </div>
+            </div> 
+
         </div>
         
     </div>
