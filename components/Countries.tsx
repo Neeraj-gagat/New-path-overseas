@@ -1,11 +1,3 @@
-
-
-// export const Countries = () => {
-//     return <div>
-//         <div></div>
-//     </div>
-// }
-
 'use client';
 import { useState } from 'react';
 
@@ -35,7 +27,6 @@ const data = {
     { name: 'Iran', flag: '🇮🇷' },
     { name: 'Iraq', flag: '🇮🇶' },
     { name: 'Israel', flag: '🇮🇱' },
-    { name: 'Japan', flag: '🇯🇵' },
     { name: 'Jordan', flag: '🇯🇴' },
     { name: 'Kazakhstan', flag: '🇰🇿' },
     { name: 'Kuwait', flag: '🇰🇼' },
@@ -116,15 +107,15 @@ const ContinentSelector = () => {
   return (
     <div className="container mx-auto p-6">
       {/* Continent Tabs */}
-      <div className="flex justify-center space-x-5 bg-[#F4F8FA] mb-6">
+      <div className="grid grid-cols-3 md:flex md:justify-center space-x-2 md:space-x-5 bg-[#F4F8FA] mb-6">
         {Object.keys(data).map((continent) => (
           <button
             key={continent}
             onClick={() => setSelectedContinent(continent)}
-            className={`px-12 py-2 rounded-lg text-lg  transition duration-300 font-medium ${
+            className={`px-4 md:px-12 py-2 text-sm md:text-lg transition duration-300 font-medium ${
               selectedContinent === continent
                 ? 'bg-[#FFFFFF] text-slate-900 border-b shadow-2xl'
-                : 'bg-[#F4F8FA] text-[#ADACBD]'
+                : 'bg-[#F4F8FA] text-[#AFAFBF]'
             }`}
           >
             {continent.replace(/([A-Z])/g, ' $1').trim()}
@@ -133,14 +124,14 @@ const ContinentSelector = () => {
       </div>
 
       {/* Countries List */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 pt-10 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 pt-7 md:pt-10 lg:grid-cols-4 gap-4">
         {data[selectedContinent as keyof typeof data].map((country) => (
           <div
             key={country.name}
-            className="flex items-center justify-start space-x-2 p-4 bg-white shadow-md rounded-lg border border-gray-200"
+            className="flex items-center justify-start w-[170px] md:w-[240px] border-r-2 border-l-2 space-x-2 p-2 md:p-5 bg-white shadow-md rounded-lg border-gray-200"
           >
-            <span className="text-2xl">{country.flag}</span>
-            <span className="text-lg font-medium">{country.name}</span>
+            <span className="text-sm md:text-2xl">{country.flag}</span>
+            <span className="text-sm md:text-lg font-medium">{country.name}</span>
           </div>
         ))}
       </div>

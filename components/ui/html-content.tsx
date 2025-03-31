@@ -21,14 +21,14 @@ export  function HTMLContent() {
         return () => controls?.stop();
       }, [inView, count]);
 
-    return <motion.pre ref={inViewRef} style={text}>{rounded}</motion.pre>
+    return <motion.pre ref={inViewRef} className="text-5xl md:text-7xl py-6">{rounded}</motion.pre>
 }
 
-const text: React.CSSProperties = {
-    fontSize: 90,
-    color: "slate-900",
-    fontWeight: 100,
-}
+// const text: React.CSSProperties = {
+//     fontSize: 90,
+//     color: "slate-900",
+//     fontWeight: 100,
+// }
 
 export  function HTMLContent2() {
     const count = useMotionValue(0)
@@ -47,13 +47,10 @@ export  function HTMLContent2() {
         return () => controls?.stop();
       }, [inView, count]);
 
-    return <motion.pre ref={inViewRef} style={text2}>{rounded}</motion.pre>
+    return <motion.pre ref={inViewRef} className="text-5xl md:text-7xl py-6">{rounded}</motion.pre>
 }
 
-const text2 = {
-    fontSize: 90,
-    color: "slate-900",
-}
+
 
 export  function HTMLContent3() {
     const count = useMotionValue(0)
@@ -72,15 +69,9 @@ export  function HTMLContent3() {
         return () => controls?.stop();
       }, [inView, count]);
 
-    return <motion.pre ref={inViewRef} style={text3}>{rounded}</motion.pre>
+    return <motion.pre ref={inViewRef} className="text-5xl md:text-7xl py-6">{rounded}</motion.pre>
 }
 
-const text3: React.CSSProperties = {
-    fontSize: 90,
-    color: "slate-900",
-    fontWeight: "lighter"
-
-} as const
 
 // export  function HTMLContent3() {
 //     const count = useMotionValue(0)

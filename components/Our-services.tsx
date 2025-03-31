@@ -13,14 +13,9 @@ export const Ourservices = () => {
         {text:"and"},
         {text:"Consultation"},
     ]
-    // const words3 = [
-    //     {text:"🌍"},
-    //     {text:"Choose"},
-    //     {text:"Your"},
-    // ]
 
     const words3 = [
-        {text:"Male"},
+        {text:"Make"},
         {text:"Your"},
         {text:"Choice"},
         {text:"for"},
@@ -30,29 +25,28 @@ export const Ourservices = () => {
         {text:"Nation"},
     ]
 
-    return <div className="pt-20 flex justify-center" id="services">
+    return <div className="pt-15 md:pt-30 flex justify-center" id="services">
         <div>
-            <p className="text-5xl flex justify-center text-slate-900 font-bold">Our Services</p>
+            <p className=" text-3xl md:text-5xl flex justify-center text-slate-900 font-bold">Our Services</p>
 
-            <div className="flex justify-between pt-20 space-x-20">
-                <div className="max-w-xl my-auto">
+            <div className="flex flex-col md:flex-row md:justify-between pt-7 md:pt-20 px-7 md:px-0  md:space-x-20">
+                <div className="md:max-w-xl md:my-auto">
                     {/* <p className="text-4xl font-bold">Visa Assistance and Consultation </p> */}
                     <TypewriterEffectSmooth words={words} />
                     <TypewriterEffectSmooth2 words={words2} />
-                    <p className="text-xl pt-7 text-slate-900 font-medium">We offer expert guidance and support for obtaining the right visa for your destination. Whether you are traveling for tourism, business, work, or study, our experienced consultants ensure that the visa application process is smooth and hassle-free.</p>
-                    <p></p>
+                    <p className="text-sm md:text-xl pt-7 max-w-xl text-slate-900 font-medium">We offer expert guidance and support for obtaining the right visa for your destination. Whether you are traveling for tourism, business, work, or study, our experienced consultants ensure that the visa application process is smooth and hassle-free.</p>
                 </div>
-                <img src="/services-img1.png" className="rounded-2xl" alt="image" width={500} height={200} />
+                <img src="/services-img1.png" className="rounded-2xl w-[400px] md:w-fit mt-8" alt="image" width={500} height={200} />
             </div>
 
-            <div className="pt-20">
-                <div className="flex justify-between space-x-20 ">
+            <div className="pt-10 md:pt-20">
+                <div className="flex flex-col md:flex-row md:justify-between px-7 md:px-0 md:space-x-20 ">
                     <div className="max-w-xl"> <TypewriterEffectSmooth words={words3} /> 
                     <TypewriterEffectSmooth2 words={words4} />
                     </div>
-                    <div className="text-xl max-w-xl pt-7 text-[#77797e] font-medium"><p>Choosing the ideal destination for immigration is a pivotal decision that can shape the trajectory of your</p> </div>
+                    <div className="text-sm md:text-xl max-w-xl pt-7 text-[#77797e] font-medium"><p>Choosing the ideal destination for immigration is a pivotal decision that can shape the trajectory of your</p> </div>
                 </div>
-                <div className="pt-15">
+                <div className="pt-7 md:pt-15">
                     <ContinentSelector/>
                 </div>
             </div>

@@ -1,23 +1,96 @@
+"use client"
 import Image from "next/image"
-
+import { useState } from "react";
 
 export const AppBar = () => {
-    return <nav className="py-6 w-full shadow-xl px-20 items-center flex justify-between space-x-16">
-        <div className="flex justify-start">
+    const [menuOpen, setMenuOpen] = useState(false);
+
+
+  const scrollToSection = (id: string, offset = 50) => {
+    const element = document.querySelector(id);
+    if (element) {
+      const topPosition = element.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: topPosition, behavior: "smooth" });
+    }
+  };
+
+
+    return <nav className="fixed top-0 left-0 py-6 w-full bg-white/30 backdrop-blur-[0.8rem] border-opacity-40 shadow-xl md:px-20 px-0 items-center flex justify-between  md:space-x-16 space-x-0 z-50">
+        <div className="flex justify-start px-4">
             <Image alt="logo" width={50} height={1} src={"/logo.png."}/>
         </div>
-        <div className="flex justify-center text-[#656669] space-x-12 font-bold">
-            <a className="hover:text-black transition duration-300 md:hover:scale-105" href="#home">Home</a>
-            <a className="hover:text-black transition duration-300 md:hover:scale-105" href="#about">About</a>
-            <a className="hover:text-black transition duration-300 md:hover:scale-105" href="#services">Our Services</a>
-            {/* <a className="hover:text-black transition duration-300 md:hover:scale-105" href="#blog">Blog</a> */}
-            <a className="hover:text-black transition duration-300 md:hover:scale-105" href="#contact us">Contact Us</a>
+        <div className="hidden md:flex justify-center text-[#656669] space-x-0 md:space-x-12 font-bold">
+            <button onClick={() => scrollToSection("#home")} className="hover:text-black transition duration-300 md:hover:scale-105"  >Home</button>
+            <button onClick={() => scrollToSection("#about")} className="hover:text-black transition duration-300 md:hover:scale-105" >About</button>
+            <button onClick={() => scrollToSection("#services")} className="hover:text-black transition duration-300 md:hover:scale-105" >Our Services</button>
+            <button onClick={() => scrollToSection("#contact")} className="hover:text-black transition duration-300 md:hover:scale-105" >Contact Us</button>
         </div>
         <div>
-            <button className="bg-[#FAB855] py-2 px-7 font-medium rounded hover:text-white hover:bg-slate-900 transition duration-300">
+            <button className="hidden md:block bg-[#FAB855] py-2 px-7 md:-mr-15 font-medium rounded hover:text-white hover:bg-slate-900 transition duration-300">
                 Apply Now
             </button>
+              {/* Hamburger Menu Icon for Mobile */}
+      <div className="lg:hidden flex items-center">
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="text-3xl -ml-9 focus:outline-none"
+        >
+          {menuOpen ? "✕" : "☰"}
+        </button>
+      </div>
         </div>
+      
 
+      {/* Mobile Menu */}
+      <div
+        className={`absolute top-16 left-0 w-full bg-white shadow-md lg:hidden transition-all duration-300 ease-in-out ${
+          menuOpen ? "block" : "hidden"
+        }`}
+      >
+        <div className="flex flex-col items-start space-y-6 p-6 text-[#656669] font-bold">
+          <button
+            onClick={() => {
+              scrollToSection("#home");
+              setMenuOpen(false);
+            }}
+            className="hover:text-black transition duration-300"
+          >
+            Home
+          </button>
+          <button
+            onClick={() => {
+              scrollToSection("#about");
+              setMenuOpen(false);
+            }}
+            className="hover:text-black transition duration-300"
+          >
+            About
+          </button>
+          <button
+            onClick={() => {
+              scrollToSection("#services");
+              setMenuOpen(false);
+            }}
+            className="hover:text-black transition duration-300"
+          >
+            Our Services
+          </button>
+          <button
+            onClick={() => {
+              scrollToSection("#contact");
+              setMenuOpen(false);
+            }}
+            className="hover:text-black transition duration-300"
+          >
+            Contact Us
+          </button>
+          <button
+            onClick={() => setMenuOpen(false)}
+            className="bg-[#FAB855] py-2 px-7 font-medium rounded hover:text-white hover:bg-slate-900 transition duration-300"
+          >
+            Apply Now
+          </button>
+        </div>
+    </div>
     </nav>
 }
