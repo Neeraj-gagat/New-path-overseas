@@ -107,7 +107,7 @@ export const Aboutus = () => {
                   <TypewriterEffectSmooth words={word3} />
                   <TypewriterEffectSmooth2 words={word4} />
                   <p className="text-sm md:text-xl pt-7 text-[#77797e] md:text-slate-900 font-medium">With years of experience in sponsoring and managing visas, we’ve perfected our processes to deliver exceptional results. Our deep understanding of work visas and our commitment to client satisfaction make us your ideal partner. Whether you’re looking to immigrate to the United States or another country, we’re here to guide you every step of the way.</p>
-                  <div className="pt-5"><a href="" className="flex justify-center text-white hover:bg-[#00CC99] transition duration-300 text-sm md:text-base font-medium w-[200px] md:w-[400px] py-3 md:py-5 rounded-lg bg-[#0191FF]">Apply Know</a></div>
+                  <div className="pt-5"><a href="" className="mx-auto md:mx-0 flex mt-3 justify-center text-white hover:bg-[#00CC99] transition duration-300 text-base md:text-base font-medium w-[200px] md:w-[400px] py-3 md:py-5 rounded-lg bg-[#0191FF]">Apply Know</a></div>
                 </div>
               </div>
             </div> 

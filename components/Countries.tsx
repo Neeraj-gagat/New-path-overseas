@@ -107,7 +107,7 @@ const ContinentSelector = () => {
   return (
     <div className="container mx-auto p-6">
       {/* Continent Tabs */}
-      <div className="grid grid-cols-3 md:flex md:justify-center space-x-2 md:space-x-5 bg-[#F4F8FA] mb-6">
+      <div className="grid grid-cols-3 md:flex md:justify-center space-y-2 md:space-y-0 space-x-2 md:space-x-5 bg-[#F4F8FA] mb-6">
         {Object.keys(data).map((continent) => (
           <button
             key={continent}
