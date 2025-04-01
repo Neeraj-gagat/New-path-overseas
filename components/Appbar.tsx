@@ -15,9 +15,9 @@ export const AppBar = () => {
   };
 
 
-    return <nav className="fixed top-0 left-0 py-6 w-full bg-white/30 backdrop-blur-[0.8rem] border-opacity-40 shadow-xl md:px-20 px-0 items-center flex justify-between  md:space-x-16 space-x-0 z-50">
+    return <nav className="fixed top-0 left-0 py-1.5 w-full bg-white/30 backdrop-blur-[0.8rem] border-opacity-40 shadow-xl md:px-20 px-0 items-center flex justify-between  md:space-x-16 space-x-0 z-50">
         <div className="flex justify-start px-4">
-            <Image alt="logo" width={50} height={1} src={"/logo.png."}/>
+            <Image alt="logo" className=" w-[140px] md:w-[160px]" width={160} height={1} src={"/logo7.png"}/>
         </div>
         <div className="hidden md:flex justify-center text-[#656669] space-x-0 md:space-x-12 font-bold">
             <button onClick={() => scrollToSection("#home")} className="hover:text-black transition duration-300 md:hover:scale-105"  >Home</button>
@@ -43,7 +43,7 @@ export const AppBar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-16 left-0 w-full bg-white shadow-md lg:hidden transition-all duration-300 ease-in-out ${
+        className={`absolute top-21 left-0 w-full bg-white shadow-md lg:hidden transition-all duration-300 ease-in-out ${
           menuOpen ? "block" : "hidden"
         }`}
       >

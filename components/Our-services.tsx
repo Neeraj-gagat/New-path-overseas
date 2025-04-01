@@ -34,7 +34,7 @@ export const Ourservices = () => {
                     {/* <p className="text-4xl font-bold">Visa Assistance and Consultation </p> */}
                     <TypewriterEffectSmooth words={words} />
                     <TypewriterEffectSmooth2 words={words2} />
-                    <p className="text-sm md:text-xl pt-7 max-w-xl text-slate-900 font-medium">We offer expert guidance and support for obtaining the right visa for your destination. Whether you are traveling for tourism, business, work, or study, our experienced consultants ensure that the visa application process is smooth and hassle-free.</p>
+                    <p className="text-sm md:text-xl pt-7 max-w-xl text-[#77797e] font-medium">We offer expert guidance and support for obtaining the right visa for your destination. Whether you are traveling for tourism, business, work, or study, our experienced consultants ensure that the visa application process is smooth and hassle-free.</p>
                 </div>
                 <img src="/services-img1.png" className="rounded-2xl w-[400px] md:w-fit mt-8" alt="image" width={500} height={200} />
             </div>
