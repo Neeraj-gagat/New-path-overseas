@@ -42,7 +42,7 @@ export  function HTMLContent2() {
       useEffect(() => {
         let controls: AnimationPlaybackControls;
         if (inView) {
-          controls = animate(count, 30, { duration: 5 });
+          controls = animate(count, 56, { duration: 5 });
         }
         return () => controls?.stop();
       }, [inView, count]);
@@ -64,7 +64,7 @@ export  function HTMLContent3() {
       useEffect(() => {
         let controls: AnimationPlaybackControls;
         if (inView) {
-          controls = animate(count, 1, { duration: 5 });
+          controls = animate(count, 42, { duration: 5 });
         }
         return () => controls?.stop();
       }, [inView, count]);

@@ -1,4 +1,4 @@
-import ContinentSelector from "./Countries"
+import {ContinentSelector, Services} from "./Countries"
 import { TypewriterEffectSmooth, TypewriterEffectSmooth2 } from "./ui/typewriter-effect"
 
 
@@ -39,7 +39,17 @@ export const Ourservices = () => {
                 <img src="/services-img1.png" className="rounded-2xl w-[400px] md:w-fit mt-8" alt="image" width={500} height={200} />
             </div>
 
-            <div className="pt-10 md:pt-20">
+            <div className="bg-white pt-20 px-7 md:px-0">
+                <div className="text-slate-900">
+                    <p className="text-lg md:text-xl font-bold  ">How WE ASSIST CLIENTS</p>
+                    <p className=" text-2xl md:text-3xl font-bold pt-5">Level With Great Visa Serving Policies</p>
+                </div>
+                <div className="pt-20">
+                    <Services/>
+                </div>
+            </div>
+
+            <div className="pt-20 md:pt-30">
                 <div className="flex flex-col md:flex-row md:justify-between px-7 md:px-0 md:space-x-20 ">
                     <div className="max-w-xl"> <TypewriterEffectSmooth words={words3} /> 
                     <TypewriterEffectSmooth2 words={words4} />

@@ -30,7 +30,7 @@ export const Hero = () => {
     ]
 
     return <div id="home" style={{backgroundImage: "url('/post_02.jpg')"}} className="h-screen bg-cover bg-center">
-        <div className="pl-4 md:pl-10 pt-40 md:pt-30">
+        <div className="pl-4 md:pl-10 pt-40 md:pt-20">
         <TypewriterEffectSmooth words={words}/>
         {/* <p className="text-5xl font-bold text-slate-900 max-w-[700px]">&quot;Trusted Visa Experts: Begin Your Journey Today!</p> */}
         <TypewriterEffectSmooth2 words={words2} />

@@ -1,7 +1,24 @@
 'use client';
 import { useState } from 'react';
+import { FaPlaneDeparture } from "react-icons/fa6";
+import { FaPlane } from "react-icons/fa6";
+import { IoBookSharp } from 'react-icons/io5';
+import { MdOutlinePersonOutline } from 'react-icons/md';
 
 const data = {
+  NorthAmerica: [
+    { name: 'USA', flag: '🇺🇸' },
+    { name: 'Canada', flag: '🇨🇦' },
+    { name: 'Mexico', flag: '🇲🇽' },
+    { name: 'Cuba', flag: '🇨🇺' },
+    { name: 'Nicaragua', flag: '🇳🇮' },
+    { name: 'Panama', flag: '🇵🇦' },
+    { name: 'Saint Kitts and Nevis', flag: '🇰🇳' },
+    { name: 'Saint Lucia', flag: '🇱🇨' },
+    { name: 'Saint Vincent and the Grenadines', flag: '🇻🇨' },
+    { name: 'Trinidad and Tobago', flag: '🇹🇹' },
+    { name: 'United States', flag: '🇺🇸' },
+  ],
   Europe: [
     { name: 'Germany', flag: '🇩🇪' },
     { name: 'France', flag: '🇫🇷' },
@@ -39,19 +56,6 @@ const data = {
     { name: 'Myanmar', flag: '🇲🇲' },
     { name: 'Nepal', flag: '🇳🇵' },
     { name: 'North Korea', flag: '🇰🇵' },
-  ],
-  NorthAmerica: [
-    { name: 'USA', flag: '🇺🇸' },
-    { name: 'Canada', flag: '🇨🇦' },
-    { name: 'Mexico', flag: '🇲🇽' },
-    { name: 'Cuba', flag: '🇨🇺' },
-    { name: 'Nicaragua', flag: '🇳🇮' },
-    { name: 'Panama', flag: '🇵🇦' },
-    { name: 'Saint Kitts and Nevis', flag: '🇰🇳' },
-    { name: 'Saint Lucia', flag: '🇱🇨' },
-    { name: 'Saint Vincent and the Grenadines', flag: '🇻🇨' },
-    { name: 'Trinidad and Tobago', flag: '🇹🇹' },
-    { name: 'United States', flag: '🇺🇸' },
   ],
   Africa: [
     { name: 'Algeria', flag: '🇩🇿' },
@@ -101,8 +105,27 @@ const data = {
   ]
 };
 
-const ContinentSelector = () => {
-  const [selectedContinent, setSelectedContinent] = useState('Europe');
+const data2 = [
+  {icon: <FaPlaneDeparture/> ,
+   name:"Work Visa",
+   paragraph:"Visarzo provides business visas for those people who want to grow their business internationally."
+  },
+  {icon: <FaPlane/> ,
+    name:" Tourists Visa ",
+    paragraph:"A visa is a conditional permission provided by a region to a foreigner to enter, stay in, or leave that country."
+  },
+  {icon: <MdOutlinePersonOutline/> ,
+  name:"PR",
+  paragraph:"For people with professions that don't require a lot of experience but aren't temporary or seasonal."
+  },
+  {icon: <IoBookSharp/> ,
+  name:"Study Visa​",
+  paragraph:"Student visas are non-immigrant visas that do not require to become a citizen of the country in which they are issued."
+  }
+]
+
+export const ContinentSelector = () => {
+  const [selectedContinent, setSelectedContinent] = useState('NorthAmerica');
 
   return (
     <div className="container mx-auto p-6">
@@ -139,4 +162,18 @@ const ContinentSelector = () => {
   );
 };
 
-export default ContinentSelector;
+export const Services = () => {
+  return <div className='flex justify-center items-center'>
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-7'>
+          {data2.map((service) => (
+            <div className='flex flex-col max-w-[250px] rounded-2xl shadow-2xl border-r-2 border-l-2 p-5' key={service.name}>
+              <div className='flex justify-center text-3xl'>{service.icon}</div>
+              <div className='flex justify-center font-bold text-[#FAB855]'>{service.name}</div>
+              <div className='flex justify-center text-center text-[#]'><p>{service.paragraph}</p></div>
+            </div>
+          ))}
+        </div>
+  </div>
+}
+
+

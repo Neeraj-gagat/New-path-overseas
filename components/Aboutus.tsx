@@ -76,14 +76,14 @@ export const Aboutus = () => {
 
             <div className="flex flex-col md:flex-row justify-between">
             <div className="">
-                <div className="w-[100px] md:w-[300px] flex justify-center pt-9 md:pt-15 bg-[#FFFFFF] mx-auto md:mx-0 items-center"> <HTMLContent/> <p className="text-[42px] md:text-7xl md:pb-2">%</p> </div>
+                <div className="w-[100px] md:w-[300px] flex justify-center pt-9 md:pt-15 bg-[#FFFFFF] mx-auto md:mx-0 items-center"> <HTMLContent/> <p className="text-[42px] md:text-[67px] md:pb-2">%</p> </div>
                 <div className="flex justify-center text-lg md:text-2xl text-start px-auto font-semibold">
                 <div className="hover:underline decoration-[#0191FF]" ><p>Successful Visa</p>
                 <p>Process Rate</p></div>
                 </div>
                 </div> 
                 <div className="">
-                <div className="w-[100px] md:w-[300px] flex justify-center pt-9 md:pt-15 bg-[#FFFFFF] mx-auto md:mx-0 items-center"> <HTMLContent2/><p className="text-[42px] md:text-7xl md:pb-2">K</p> </div>
+                <div className="w-[100px] md:w-[300px] flex justify-center pt-9 md:pt-15 bg-[#FFFFFF] mx-auto md:mx-0 items-center"> <HTMLContent2/><p className="text-[42px] md:text-[67px] md:pb-2">K</p> </div>
                 <div className="flex justify-center text-lg md:text-2xl text-start px-auto font-semibold">
                 <div className="hover:underline decoration-[#0191FF]"><p>We Have Worked</p>
                 <p>With Clients</p></div>
@@ -91,7 +91,7 @@ export const Aboutus = () => {
                 </div> 
                 
                 <div className="">
-                <div className="w-[100px] md:w-[300px] flex justify-center pt-9 md:pt-15 bg-[#FFFFFF] mx-auto md:mx-0 items-center"> <HTMLContent3/> <p className="text-[42px] md:text-7xl md:pb-2">DAY</p> </div>
+                <div className="w-[100px] md:w-[300px] flex justify-center pt-9 md:pt-15 bg-[#FFFFFF] mx-auto md:mx-0 items-center"> <HTMLContent3/> <p className="text-[42px] md:text-[67px] md:pb-2">Hrs</p> </div>
                 <div className="flex justify-center text-lg md:text-2xl text-start px-auto font-semibold">
                 <div className="hover:underline decoration-[#0191FF]"><p>Application Approval</p>
                 <p>Processing Time</p></div>
