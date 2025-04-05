@@ -169,7 +169,7 @@ export const Services = () => {
             <div className='flex flex-col max-w-[250px] rounded-2xl shadow-2xl border-r-2 border-l-2 p-5' key={service.name}>
               <div className='flex justify-center text-3xl'>{service.icon}</div>
               <div className='flex justify-center font-bold text-[#FAB855]'>{service.name}</div>
-              <div className='flex justify-center text-center text-[#]'><p>{service.paragraph}</p></div>
+              <div className='flex justify-center text-sm md:text-base text-center text-[#]'><p>{service.paragraph}</p></div>
             </div>
           ))}
         </div>
