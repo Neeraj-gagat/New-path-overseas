@@ -43,7 +43,7 @@ export const AppBar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-22.5 left-0 w-full bg-white shadow-md lg:hidden transition-all duration-300 ease-in-out ${
+        className={`absolute top-24.5 left-0 w-full bg-white shadow-md lg:hidden transition-all duration-300 ease-in-out ${
           menuOpen ? "block" : "hidden"
         }`}
       >
