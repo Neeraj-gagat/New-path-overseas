@@ -17,7 +17,7 @@ const data = {
     { name: 'Saint Lucia', flag: '🇱🇨' },
     { name: 'Saint Vincent and the Grenadines', flag: '🇻🇨' },
     { name: 'Trinidad and Tobago', flag: '🇹🇹' },
-    { name: 'United States', flag: '🇺🇸' },
+    // { name: 'United States', flag: '🇺🇸' },
   ],
   Europe: [
     { name: 'UK', flag: '🇬🇧' },
