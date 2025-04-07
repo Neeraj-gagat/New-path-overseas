@@ -20,6 +20,7 @@ const data = {
     { name: 'United States', flag: '🇺🇸' },
   ],
   Europe: [
+    { name: 'UK', flag: '🇬🇧' },
     { name: 'Germany', flag: '🇩🇪' },
     { name: 'France', flag: '🇫🇷' },
     { name: 'Italy', flag: '🇮🇹' },
@@ -106,10 +107,10 @@ const data = {
 };
 
 const data2 = [
-  {icon: <FaPlaneDeparture/> ,
-   name:"Work Visa",
-   paragraph:"Visarzo provides business visas for those people who want to grow their business internationally."
-  },
+  {icon: <IoBookSharp/> ,
+    name:"Study Visa​",
+    paragraph:"Student visas are non-immigrant visas that do not require to become a citizen of the country in which they are issued."
+    },
   {icon: <FaPlane/> ,
     name:" Tourists Visa ",
     paragraph:"A visa is a conditional permission provided by a region to a foreigner to enter, stay in, or leave that country."
@@ -118,10 +119,10 @@ const data2 = [
   name:"PR",
   paragraph:"For people with professions that don't require a lot of experience but aren't temporary or seasonal."
   },
-  {icon: <IoBookSharp/> ,
-  name:"Study Visa​",
-  paragraph:"Student visas are non-immigrant visas that do not require to become a citizen of the country in which they are issued."
-  }
+  {icon: <FaPlaneDeparture/> ,
+    name:"Business Visa",
+    paragraph:"New path overseas provides business visas for those people who want to grow their business internationally."
+   },
 ]
 
 export const ContinentSelector = () => {
