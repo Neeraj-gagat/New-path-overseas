@@ -15,7 +15,7 @@ export const AppBar = () => {
   };
 
 
-    return <nav className="fixed top-0 left-0 py-3 w-full bg-black backdrop-blur-[0.8rem] border-opacity-40 shadow-xl md:px-20 px-0 items-center flex justify-between  md:space-x-16 space-x-0 z-50">
+    return <nav className="fixed top-0 left-0 py-2 w-full bg-black backdrop-blur-[0.8rem] border-opacity-40 shadow-xl md:px-20 px-0 items-center flex justify-between  md:space-x-16 space-x-0 z-50">
         <div className="flex justify-start px-4">
             <Image alt="logo" className=" w-[140px] md:w-[140px]" width={140} height={1} src={"/logo7.png"}/>
         </div>
@@ -43,7 +43,7 @@ export const AppBar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-24.5 left-0 w-full bg-white shadow-md lg:hidden transition-all duration-300 ease-in-out ${
+        className={`absolute top-22.5 left-0 w-full bg-white shadow-md lg:hidden transition-all duration-300 ease-in-out ${
           menuOpen ? "block" : "hidden"
         }`}
       >
