@@ -34,7 +34,7 @@ export const Hero = () => {
         <TypewriterEffectSmooth words={words}/>
         {/* <p className="text-5xl font-bold text-slate-900 max-w-[700px]">&quot;Trusted Visa Experts: Begin Your Journey Today!</p> */}
         <TypewriterEffectSmooth2 words={words2} />
-        <p className="pt-10 md:pt-10 font-medium text-base md:text-xl text-slate-900 max-w-[700px]">At visa key Overseas, our experienced immigration consultants in Chandigarh help you achieve your immigration dreams. We offer personalized guidance and support throughout the entire process.</p>
+        <p className="pt-10 md:pt-10 font-medium text-base md:text-xl text-slate-900 max-w-[700px]">At VISA KEY Overseas, our experienced immigration consultants in Chandigarh help you achieve your immigration dreams. We offer personalized guidance and support throughout the entire process.</p>
         <div className="pt-10 space-y-2.5 text-base md:text-[19px] font-Poppins text-slate-900 font-normal">
             <div className="flex items-center gap-2"><FaCheck color="#3d3c3c" /> <p>Expert Legal Support</p></div>
             <div className="flex items-center gap-2"><FaCheck color="#3d3c3c" /> <p>Meeting Your Unique Needs</p></div>
