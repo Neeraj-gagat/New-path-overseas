@@ -121,7 +121,7 @@ const data2 = [
   },
   {icon: <FaPlaneDeparture/> ,
     name:"Business Visa",
-    paragraph:"New path overseas provides business visas for those people who want to grow their business internationally."
+    paragraph:"Visa Key overseas provides business visas for those people who want to grow their business internationally."
    },
 ]
 
@@ -152,7 +152,7 @@ export const ContinentSelector = () => {
         {data[selectedContinent as keyof typeof data].map((country) => (
           <div
             key={country.name}
-            className="flex items-center justify-start w-[170px] md:w-[240px] border-r-2 border-l-2 space-x-2 p-2 md:p-5 bg-white shadow-md rounded-lg border-gray-200"
+            className="flex items-center justify-start w-[170px] md:w-[240px] border-r-2 border-l-2 space-x-2 p-2 md:p-3 bg-white shadow-md rounded-lg border-gray-200"
           >
             <span className="text-sm md:text-2xl">{country.flag}</span>
             <span className="text-sm md:text-lg font-medium">{country.name}</span>

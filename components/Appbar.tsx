@@ -15,25 +15,25 @@ export const AppBar = () => {
   };
 
 
-    return <nav className="fixed top-0 left-0 py-2 w-full bg-black backdrop-blur-[0.8rem] border-opacity-40 shadow-xl md:px-20 px-0 items-center flex justify-between  md:space-x-16 space-x-0 z-50">
-        <div className="flex justify-start px-4">
-            <Image alt="logo" className=" w-[140px] md:w-[140px]" width={140} height={1} src={"/logo7.png"}/>
+    return <nav className="fixed top-0 left-0 py-0.5 w-full bg-[#FFFFFF] backdrop-blur-[0.8rem] border-opacity-40 shadow-xl md:px-20 px-0 items-center flex justify-between  md:space-x-16 space-x-0 z-50">
+        <div className="flex justify-start">
+            <Image alt="logo" className=" w-[190px] md:w-[210px]" width={140} height={1} src={"/visakey-logo.png"}/>
         </div>
-        <div className="hidden md:flex justify-center text-[#ffffff] space-x-0 md:space-x-12 font-bold">
-            <button onClick={() => scrollToSection("#home")} className="hover:text-[#FAB855] transition duration-300 md:hover:scale-105"  >Home</button>
-            <button onClick={() => scrollToSection("#about")} className="hover:text-[#FAB855] transition duration-300 md:hover:scale-105" >About</button>
-            <button onClick={() => scrollToSection("#services")} className="hover:text-[#FAB855] transition duration-300 md:hover:scale-105" >Our Services</button>
-            <button onClick={() => scrollToSection("#contact")} className="hover:text-[#FAB855] transition duration-300 md:hover:scale-105" >Contact Us</button>
+        <div className="hidden md:flex justify-center text-[#7A7A7A] space-x-0 md:space-x-12 font-bold">
+            <button onClick={() => scrollToSection("#home")} className="hover:text-black transition duration-300 md:hover:scale-105"  >Home</button>
+            <button onClick={() => scrollToSection("#about")} className="hover:text-black transition duration-300 md:hover:scale-105" >About</button>
+            <button onClick={() => scrollToSection("#services")} className="hover:text-black transition duration-300 md:hover:scale-105" >Our Services</button>
+            <button onClick={() => scrollToSection("#contact")} className="hover:text-black transition duration-300 md:hover:scale-105" >Contact Us</button>
         </div>
         <div>
-            <button className="hidden md:block bg-white py-2 px-7 md:-mr-15 font-medium rounded hover:text-white hover:bg-[#FAB855] transition duration-300">
+            <a href="tel:8264551555" className="hidden md:block bg-black text-white py-2 px-7 md:-mr-15 font-medium rounded hover:text-white hover:bg-[#028DF3] transition duration-400">
                 Apply Now
-            </button>
+            </a>
               {/* Hamburger Menu Icon for Mobile */}
       <div className="lg:hidden flex items-center">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-3xl -ml-9 focus:outline-none text-[#FAB855]"
+          className="text-[36px] -ml-11 focus:outline-none text-[#FAB855]"
         >
           {menuOpen ? "✕" : "☰"}
         </button>
@@ -43,7 +43,7 @@ export const AppBar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-22.5 left-0 w-full bg-white shadow-md lg:hidden transition-all duration-300 ease-in-out ${
+        className={`absolute top-19 left-0 w-full bg-white shadow-md lg:hidden transition-all duration-300 ease-in-out ${
           menuOpen ? "block" : "hidden"
         }`}
       >
@@ -84,12 +84,13 @@ export const AppBar = () => {
           >
             Contact Us
           </button>
-          <button
+          <a
+            href="tel:8264551555"
             onClick={() => setMenuOpen(false)}
             className="bg-[#FAB855] py-2 px-7 font-medium rounded hover:text-white hover:bg-slate-900 transition duration-300"
           >
             Apply Now
-          </button>
+          </a>
         </div>
     </div>
     </nav>

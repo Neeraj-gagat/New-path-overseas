@@ -9,7 +9,7 @@ export default function Home() {
   return ( 
     <div className="bg-white">
       <AppBar />
-      <div className="md:mt-22">
+      <div className="md:mt-20">
       <Hero/>
       <Aboutus/>
       <Ourservices/>
